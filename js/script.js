@@ -14,7 +14,7 @@ function playGame(playerInput){
         return 'nieznany ruch';
       }
   }
-  function displayResult(argComputerMove, argPlayerMove){
+  const displayResult = function(argComputerMove, argPlayerMove){
     console.log('Zagrania:', argComputerMove, argPlayerMove);
     printMessage('Ja zagrałem ' + argComputerMove + ', a Ty zagrałeś ' + argPlayerMove + '.');
     if( argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
